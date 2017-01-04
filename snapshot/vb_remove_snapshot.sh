@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# This Bash script is used to remove a snapshot from a VM from command line
+# This Bash script is used to remove a snapshot from a Virtualbox VM from the command line
 # ./remove_snapshot.sh server01 snapshotUUID
 #
 # $1 == servername

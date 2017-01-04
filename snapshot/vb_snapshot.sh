@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# This Bash script is used to take a snapshot of a VM in Virutalbox from command line
+# This Bash script is used to take a snapshot of a VM in Virtualbox from command line
 # Example: ./snapshot.sh
 #
 

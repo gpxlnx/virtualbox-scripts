@@ -1,15 +1,13 @@
 # Copy the Bash aliases below to your ~/.bashrc file to manage virtualbox from the command line 
 
-# The virtualbox-scripts dir is found in VB_PATH
+# Where is the virtualbox-scripts located?
 VB_SCRIPTPATH="~/virtualbox-scripts"
 
 function vb_stop() {
-
    vboxmanage controlvm $1 poweroff
 }
 
 function vb_start() {
-
    vboxmanage startvm $1 --type headless
 }
 
