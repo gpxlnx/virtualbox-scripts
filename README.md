@@ -7,7 +7,7 @@ Installation
 Clone or download the content of this repo to your computer 
 
 ### Example:
-cd ~  
+[username@laptop ~] cd ~    
 [username@laptop ~]$ git clone https://github.com/jensfredlund/virtualbox-scripts.git  
 Cloning into 'virtualbox-scripts'...  
 remote: Counting objects: 29, done.  
@@ -21,7 +21,6 @@ list        ports    settings   startstop  vb_help.sh
   
 ### Add the Bash aliases below to your to ~/.bashrc file. Don't forget to change the VB_SCRIPTPATH to the directory where the virtualbox-scripts is located. 
   
-# Where is the virtualbox-scripts located?  
 VB_SCRIPTPATH="~/virtualbox-scripts"  
   
 function vb_stop() {  
