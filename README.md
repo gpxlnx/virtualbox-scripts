@@ -6,7 +6,7 @@ Installation
 ============
 *Clone or download the content of this repo to your computer*
 
-**[jf@Tzunami ~]** cd ~    
+**[jf@Tzunami ~]$** cd ~    
 **[jf@Tzunami ~]$** git clone https://github.com/jensfredlund/virtualbox-scripts.git  
 Cloning into 'virtualbox-scripts'...  
 remote: Counting objects: 29, done.  
