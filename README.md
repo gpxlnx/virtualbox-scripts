@@ -66,6 +66,10 @@ Start/stop VM:
 vbstart server01 - Start VM server01
 vbstop server01  - Stop VM server01
 
+Start/stop all VMs:
+vbstartall       - Start all VMs
+vbstopall        - Stop all VMs"
+
 Group action:
 vbstartg puppet  - Start all VMs in group puppet
 vbstopg puppet   - Stop all server in grou puppet
