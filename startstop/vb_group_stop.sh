@@ -14,7 +14,7 @@ function search_vm_group() {
 
    if [[ $GROUP == "$2" ]]; then
 
-      echo "${bold}Stopping VM: $1 Group: $2${normal}"
+      echo "${bold}Shutting down VM: $1 Group: $2${normal}"
       vboxmanage controlvm $1 poweroff
 
    fi

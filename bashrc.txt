@@ -4,6 +4,7 @@
 VB_SCRIPTPATH="~/virtualbox-scripts"
 
 function vb_stop() {
+   echo "Waiting for VM \"$1\" to shutdown..."
    vboxmanage controlvm $1 poweroff
 }
 
@@ -14,10 +15,10 @@ function vb_start() {
 alias vbhelp="$VB_SCRIPTPATH/vb_help.sh"
 alias vblist="$VB_SCRIPTPATH/list/vb_list_all_vms.sh"
 alias vbstart=vb_start
-alias vbstartg="$VB_SCRIPTPATH/startstop/vb_group_start.sh $1"
+alias vbstartg="$VB_SCRIPTPATH/startstop/vb_group_start.sh "$1""
 alias vbrunning="$VB_SCRIPTPATH/list/vb_list_running_vms.sh"
 alias vbstop=vb_stop
-alias vbstopg="$VB_SCRIPTPATH/startstop/vb_group_stop.sh $1"
+alias vbstopg="$VB_SCRIPTPATH/startstop/vb_group_stop.sh "$1""
 alias vbports="$VB_SCRIPTPATH/ports/vb_list_port_forward_all.sh"
 alias vbgroups="$VB_SCRIPTPATH/list/vb_list_groups.sh"
 alias vbmac="$VB_SCRIPTPATH/network/vb_list_mac.sh $1"
@@ -28,3 +29,5 @@ alias vbremovesnap="$VB_SCRIPTPATH/snapshot/vb_remove_snapshot.sh $1"
 alias vbrestoresnap="$VB_SCRIPTPATH/snapshot/vb_remove_snapshot.sh $1 $2"
 alias vbsettings="$VB_SCRIPTPATH/settings/vb_vm_settings.sh $1"
 alias vbstorage="$VB_SCRIPTPATH/storage/vb_list_all_disks.sh"
+alias vbstopall="$VB_SCRIPTPATH/startstop/vb_poweroff_all.sh"
+alias vbstartall="$VB_SCRIPTPATH/startstop/vb_start_all.sh"

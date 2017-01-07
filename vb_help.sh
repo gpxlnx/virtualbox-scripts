@@ -15,6 +15,10 @@ echo -e "${bold}Start/stop VM:${normal}
 vbstart server01 - Start VM server01
 vbstop server01  - Stop VM server01";
 
+echo -e "\n${bold}Start/stop all VMs:${normal}
+vbstartall       - Start all VMs
+vbstopall        - Stop all VMs"
+
 echo -e "\n${bold}Group action:${normal}
 vbstartg puppet  - Start all VMs in group puppet
 vbstopg puppet   - Stop all server in grou puppet"
